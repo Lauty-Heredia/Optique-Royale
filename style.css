@@ -6,7 +6,7 @@ header {
 	background-color: #000000;
 }
 
-.logoimg{
+.logo{
 	width: 25%;
 }
 
@@ -261,9 +261,10 @@ h3{
 
 
 @media (max-width: 400px) {
-	.logoimg{
+	.logo{
 		width: 50%;
 	}
+	
 	.carousel-item {
 			max-height: 300px; 
 	}
