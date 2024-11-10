@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="sources/imagenes/loguito.png" type="image/x-icon">
+    <title>Optique Royale</title>
+</head>
+
+<body >
+  <!--Cabecera y nav-->
+  <header class="text-center py-4">
+    <img src="sources/imagenes/logo.png" alt="Logo" class="img-fluid w-25">
+ </header>
+  <nav class="navbar navbar-expand-lg navbar-light" style="padding-left: 5%; padding-right: 5%;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars" style="color: white;"></i> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="info.html">Info</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
+          <div class="d-flex align-items-center ">
+              <a href="#" class="nav-icon mx-2">
+                  <i class="fas fa-user"></i>
+              </a>
+              <a href="#" class="nav-icon mx-2">
+                  <i class="fas fa-search"></i>
+              </a>
+              <a href="#" class="nav-icon mx-2">
+                  <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+          </div>
+      </div>
+    </nav>
+  
+  <!--Carrusel Imagenes-->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="sources/imagenes/fotohombre.png" alt="Imagen 1" class="d-block w-100">
+              <div class="carousel-caption text-left custom-caption">
+                <h1>Glasses Aurelios</h1>
+                <p>Elegant and luxurious</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="sources/imagenes/fotomujer.png" alt="Imagen 2" class="d-block w-100">
+              <div class="carousel-caption text-left m custom-caption">
+                <h1>Glasses Imperium</h1>
+                <p>Timeless and sophisticated</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="sources/imagenes/fotohombremujer.png" alt="Imagen 3" class="d-block w-100">
+              <div class="carousel-caption text-left custom-caption">
+                <h1>Glasses Nocturne</h1>
+                <p>Bold and captivating</p>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+      </button>
+  </div>
+  
+  <!--Descuento-->
+  <div id="CarouselDescuento" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item descuento active">
+        <h2 class="text-center">🔥20% DESCUENTO EN TU PRIMERA COMPRA 😱🔥</h2>
+      </div>
+      <div class="carousel-item descuento">
+        <h2 class="text-center">🔥Compra ahora y obtén un regalo sorpresa🔥</h2>
+        </div>
+      <div class="carousel-item descuento">
+        <h2 class="text-center">🔥Envío gratis en pedidos mayores a $50🔥</h2>
+      </div>
+    </div>
+  </div>
+
+  <!--Productos-->
+  <div class="container mb-4">
+      <div class="row">
+          <div class="col-6 col-md-3 prod">
+              <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p1.png" class="card-img-top" alt="Glasses Bennetton">
+                  <div class="card-body">
+                      <h5 class="card-title">Glasses Bennetton</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-3 prod">
+              <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p2.png" class="card-img-top" alt="Glasses Ray-Ban">
+                  <div class="card-body">
+                      <h5 class="card-title">Glasses Ray-Ban</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+              </a>
+          </div>
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p3.png" class="card-img-top" alt="Glasses Ray-Ban 3684">
+                  <div class="card-body">
+                      <h5 class="card-title">Glasses Ray-Ban 3684</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p4.png" class="card-img-top" alt="Ray-Ban Aviator">
+                  <div class="card-body">
+                      <h5 class="card-title">Ray-Ban Aviator</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p5.png" class="card-img-top" alt="Ray-Ban 3447">
+                  <div class="card-body">
+                      <h5 class="card-title">Ray-Ban 3447</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p6.png" class="card-img-top" alt="Oakley Portal">
+                  <div class="card-body">
+                      <h5 class="card-title">Oakley Portal</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p7.png" class="card-img-top" alt="Ray-Ban 4346">
+                  <div class="card-body">
+                      <h5 class="card-title">Ray-Ban 4346</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+          <div class="col-6 col-md-3 prod">
+            <a class="product" href="producto.html">
+              <div class="card mt-4 text-center">
+                  <img src="sources/Productos/p8.png" class="card-img-top" alt="Oakley Sutro Lite">
+                  <div class="card-body">
+                      <h5 class="card-title">Oakley Sutro</h5>
+                      <p class="card-text">$40</p>
+                  </div>
+              </div>
+            </a>  
+          </div>
+      </div>
+  </div>
+
+  <!--Coleccion--> 
+  <div class="text-center mb-4">
+    <h3>Colecciones</h3>
+    <div class="colection mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card mt-4">
+              <div class="image-overlay">
+                <img src="sources/Colecciones/Verano2025.png" class="img-top" alt="verano">
+                <div class="title-overlay">
+                  <h4>Verano 2025</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mt-4">
+              <div class="image-overlay">
+                <img src="sources/Colecciones/Invierno2025.png" class="img-top" alt="invierno">
+                <div class="title-overlay">
+                  <h4>Invierno 2025</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mt-4">
+              <div class="image-overlay">
+                <img src="sources/Colecciones/Otoño2025.png" class="img-top" alt="otoño">
+                <div class="title-overlay">
+                  <h4>Otoño 2025</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+  
+    <div class="carousel-colection">
+      <div class="container cont1">
+      <div id="Carousel-Colection" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="sources/Colecciones/Verano2025.png" class="d-block w-100" alt="verano">
+          </div>
+          <div class="carousel-item">
+            <img src="sources/Colecciones/Invierno2025.png" class="d-block w-100" alt="invierno">
+          </div>
+          <div class="carousel-item">
+            <img src="sources/Colecciones/Otoño2025.png" class="d-block w-100" alt="otoño">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!--Preguntas Frecuentes-->
+  <div class="container mb-4">
+        <div class="text-center mb-4">
+            <h3>Preguntas Frecuentes</h3>
+        </div>
+  <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                  ¿Cómo hago una compra online?
+              </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"> <!-- Remover 'show' de aquí -->
+              <div class="accordion-body">
+            <strong>Paso 1: Elegir lo que querés</strong>
+            Agrega los productos que desees a tu carrito de compra haciendo click en "Agregar al carrito". Si queres tus anteojos graduados, tiene a mano una foto de tu receta para subirla y compartirnos tu graduación. Una vez que hayas seleccionado todos los productos, hace click en “Comprar ahora” para avanzar en tu pedido.<br>
+            <strong>Paso 2: Seleccionar la opción de envío</strong>
+            El siguiente paso es completar tu dirección y seleccionar el modo de envío. La primera opción es el ENVIO A DOMICILIO desde nuestras oficinas de CABA, nuestra plataforma calculará el envío de forma automática, en base a tu dirección de entrega.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          ¿Hacen envíos? ¿Cuánto demoran?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            Sí, realizamos envíos a diversas ubicaciones. El tiempo de entrega varía según la ubicación del destinatario y el método de envío seleccionado. Por lo general, los envíos se completan entre 3 y 7 días hábiles. Una vez que tu pedido sea procesado, recibirás un correo de confirmación con la información de seguimiento para que puedas estar al tanto de tu envío. Si tienes alguna pregunta sobre tu entrega, no dudes en contactarnos.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            ¿Los productos tienen garantía? ¿Hacen devoluciones?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            Sí, todo nuestros productos cuentan con 6 meses de garanía por fallas de fábricación.<br>
+
+            Tambien hacemos devoluciones. Si realizaste tu compra online, mientras el producto sea devuelto en buen estado dentro de los 30 días de la compra, te realizaremos el reembolso.<br>
+
+            El costo de los envíos por la devolución o por cambios es a cargo del comprador.<br>
+        </div>
+      </div>
+    </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              ¿Tenés más preguntas?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div class="accordion-body">
+              Podes contacarnos por nuestras redes sociales y con gusto te solucionamos todos tus dudas!
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+    
+  <!--Footer-->
+  <footer class="text-white pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Optique Royale</h5>
+          <p> En Optique Royale, combinamos artesanía de lujo con
+          precisión óptica para ofrecer una experiencia visual
+          inigualable. Descubre la
+          perfección a través de nuestras colecciones de gafas
+          de lujo</p>
+        </div>
+
+        <div class="col-md-3 mb-3 text-center">
+          <h5>Información</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">- Inicio</a></li>
+            <li><a href="#" class="text-white">- Tienda</a></li>
+            <li><a href="#" class="text-white">- Info</a></li>
+            <li><a href="#" class="text-white">- Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4 text-center">
+          <h5>Conéctate con Nosotros</h5>
+          <a href="https://www.facebook.com" target="_blank" class="me-3">
+            <i class="fa-brands fa-facebook" style="color: #c0c0c0;"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="me-3">
+            <i class="fa-brands fa-instagram" style="color: #c0c0c0;"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="me-3">
+            <i class="fa-brands fa-twitter" style="color: #c0c0c0;"></i>
+          </a>
+        </div>
+
+        <div class="col-md-3 mb-3 text-center">
+          <img src="sources/imagenes/datafiscal.png" alt="data" class="img-fluid">
+          <img src="sources/imagenes/cerifed store.png" alt="cetificado" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="text-center py-3">
+      <p class="mb-0">&copy; 2024 Optique Royale. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
