@@ -19,7 +19,7 @@
 <body>
      <!--Cabecera y nav-->
       <header class="text-center py-4">
-        <img src="sources/imagenes/logo.png" alt="Logo" class="img-fluid logo">
+        <img src="sources/imagenes/logo.png" alt="Logo" class="img-fluid w-25">
      </header>
       <nav class="navbar navbar-expand-lg navbar-light" style="padding-left: 5%; padding-right: 5%;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                       <a class="nav-link" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#">Tienda</a>
+                      <a class="nav-link" href="tienda.html">Tienda</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="info.html">Info</a>
@@ -101,10 +101,31 @@
                     <button class="btn btn-outline-secondary" type="button" onclick="adjustQuantity(1)">+</button>
                 </div>
     
-                <button class="btn w-100 d-flex align-items-center justify-content-center boton-compra">
-                    <i class="bi bi-bag me-2"></i> Comprar Ahora
-                </button>
+                <div class="d-flex gap-2">
+                    <button class="btn w-100 d-flex align-items-center justify-content-center boton-compra">
+                        <i class="bi bi-bag me-2"></i> Comprar Ahora
+                    </button>
+                    <button class="btn btncarrito" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
     
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-center">
+            <div class="modal-content">
+                <div class="modal-body">
+                    ¡El producto ha sido agregado a tu carrito! <br><br>
+
+                    Puedes seguir comprando o pagar ahora!
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                    <button type="button" class="btn btn-primary">Pagar</button>
+                </div>
             </div>
         </div>
     </div>

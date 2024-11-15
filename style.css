@@ -6,9 +6,6 @@ header {
 	background-color: #000000;
 }
 
-.logo{
-	width: 25%;
-}
 
 .navbar{
 	background-color: #000000;
@@ -208,6 +205,31 @@ h3{
 	font-family: 'Lato', sans-serif;
 }
 
+.btncarrito{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.btn-primary{
+	background-color: #000000;
+}
+
+.modal-content{
+	font-family: 'Bodoni Moda', sans-serif;
+}
+
+.modal-body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	background-color: #F8F6F0;
+}
+
+.modal-footer{
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	background-color: #F8F6F0;
+}
+
 .spec{
 	font-family: 'Lato', serif;
 	font-size: clamp(1.5rem, 2vw, 4rem);
@@ -225,14 +247,18 @@ h3{
 	width: 100%;
 	padding: 20px;
 }
+
 /* Info */
+.info{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
 
 .category-title {
 		font-family: 'Bodoni Moda', serif;
 		font-size: 1.5rem;
 		margin-top: 20px;
 }
-
 
 .sidebar {
 		font-family: 'Lato', sans-serif;
@@ -252,6 +278,9 @@ h3{
 		margin-bottom: 5px;
 }
 
+.logo{
+	width: 25%;
+}
 /* Puntos de ruptura */
 @media (max-width: 1200px) {
 	.carousel-item  {
@@ -260,11 +289,10 @@ h3{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 	.logo{
 		width: 50%;
 	}
-	
 	.carousel-item {
 			max-height: 300px; 
 	}
